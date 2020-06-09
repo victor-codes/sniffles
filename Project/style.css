@@ -1,0 +1,76 @@
+/* add top nav start */
+.topnav {
+   background-color: #b2beb5;
+   overflow: hidden;
+  
+}
+.topnav active {
+  color: blueviolet;
+  
+
+
+}
+.topnav a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 10px 10px;
+    text-decoration: none;
+    font-size: 17px;
+}
+.topnav a:hover {
+    background-color: #fff;
+    color: black;
+  }
+/* top nav end */
+/* front page image start*/
+ header {
+   background-image: url(unsplash.jpg);
+   height: 100vh;
+   background-size: cover;
+   background-position: center;
+ }
+ 
+ /* front page image end */
+ /* title start */
+ .title {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%) ;
+ }
+ .title h1{
+   color:#fff;
+   font-size: 50px;
+
+ }
+
+.button {
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.btn {
+  border: 1px solid #fff transparent;
+  padding: 10px 30 px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+
+
+.circle {
+  float: center;
+  width: 150px;
+  height: 150px;
+  background-color: #eeeeee;
+  border-radius: 50%;
+  box-shadow: 5px 5px 10px #00000027,
+              -5px -5px 10px #fff;
+}
