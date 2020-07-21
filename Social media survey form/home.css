@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@600&display=swap');
+
+
+body {
+    background-image: url(bodyimage.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: monospace;
+    color: white;
+    text-shadow: 1px 1px 5px #000000 ;
+}
+
+
+#title{
+    font-family: 'Noto Sans TC', sans-serif;
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 0%;
+    padding: 0%;
+}
+#description {
+    font-family: 'Noto Sans TC', sans-serif;
+    color: white;
+    text-align: center;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    padding: 0%;
+}
+ #survey-form {
+     top: 150px;
+     border-radius: 5px;
+     margin-top: 1%;
+     padding-top: 2%;
+     padding-bottom: 2%;
+     background-color: rgb(12, 12, 47);
+     font-family: 'Public Sans', sans-serif;
+     width: 100%;
+     height: 200%;
+ }
+
+ p {
+    font-family: 'Public Sans', sans-serif;
+     margin-bottom: 0px;
+     margin-top: 0px;
+     margin-left: 0px;
+     padding-top: 0px;
+     padding-bottom: 2%;
+ }
+
+ h1 {
+      font-weight: 400;
+      line-height: 1.3;
+      padding-bottom: 0%;   
+ }
+
+ .form-group {
+
+     text-align: left;
+     display: block;
+     margin-left: 25px;
+     margin-bottom: 29px;
+     padding-top: 10px;
+     padding-bottom: 0px;
+     font-family: 'Public Sans', sans-serif;
+     line-height: auto;
+     
+  }
+
+  .padding-top {
+      padding-top: 10px;
+      padding-bottom: 15px;
+      width: 95%;
+      height: 100%;
+  }
+
+.form-control {
+    padding-bottom: 10px;
+    height: 2rem;
+    width: 100%;
+    border: 1px solid white;
+    background-clip: padding-box;
+    border-radius: 5px;
+   
+}
+
+
+.why {
+    height: 50px;
+    width: 100%;
+}
+
+#dropdown {
+    color: black;
+    width: 96% ;
+}
+
+.checkbox, 
+.input-radio {
+    display: inline-block;
+    margin-right: 1%;
+    min-width: 1%;
+    min-height: 1%;
+}
+
+.comment {
+    margin-left: 0px;
+    width: 95%;
+    height: 75%;
+    border-radius: 5px;
+}
+   
+.submit-button {
+    cursor: pointer;
+    height: 40px;
+    width: 97%;
+    background: green;
+    color: inherit;
+    border-width: 1px;
+    margin-right: 15px;
+    border-radius: 5px;
+}
+
+.submit-button:hover {
+    background-color:  rgb(17, 17, 77);;
+}

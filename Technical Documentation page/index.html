@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Documentation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav id="navbar">
+        <header>CSS Documentation</header>
+        <ul>
+            <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+            <li><a class="nav-link" href="#What_you_should_know_already">what you should know already</a></li>
+            <li><a class="nav-link" href="#Css_ruleset">CSS ruleset</a></li>
+            <li><a class="nav-link" href="#Selecting_multiple_element">Selecting multiple element</a></li>
+            <li><a class="nav-link" href="#Selectors">selectors</a></li>
+            <li><a class="nav-link" href="#Types_of_selectors">Types of selectors</a></li>
+            <li><a class="nav-link" href="#Fonts_and_texts">fonts and texts</a></li>
+            <li><a class="nav-link" href="#Css_box_modal">CSS Box modal</a></li>
+            <li><a class="nav-link" href="#Changing_the_page_color">changing the page color</a></li>
+            <li><a class="nav-link" href="#Styling_the_body">styling the body</a></li>
+            <li><a class="nav-link" href="#Positioning">positioning</a></li>
+            <li><a class="nav-link" href="#CSS_flexbox">CSS Flexbox</a></li>
+            <li><a class="nav-link" href="#CSS_grid">CSS Grid</a></li>
+            <li><a class="nav-link" href="#Reference">reference</a></li>
+        </ul>
+    </nav>
+    <main id="main-doc">
+        <section id="Introduction" class="main-section">
+            <header>Introduction</header>
+            <p class="info">CSS is one of the core languages of the open Web and is standardized across Web browsers
+                according to the W3C specification. Previously development of various parts of CSS
+                specification was done synchronously, which allowed versioning of the latest recommendation.
+                You might have heard about CSS1, CSS2.1, CSS3.<br>Like HTML, CSS is not a programming language. It's not a markup language either.
+                CSS is a style sheet language. CSS is what you use to selectively style HTML elements.
+                For example, this CSS selects paragraph text, setting the color to red.</p>
+            <div class="container">
+                <p class="item"> p { <br>color: red; <br> }</p>
+            </div>
+        </section>
+        <section id="What_you_should_know_already" class="main-section">
+            <header>what you should know already</header>
+            <p class="info">You should learn the basics of HTML before attempting any CSS. It is important that you
+                learn HTML brfore learning CSS.<br>Once you understand the fundamentals of HTML, we recommend that you learn HTML and CSS at
+                the same time, moving back
+                and forth between the two topics. This is because HTML is far more interesting and much more fun to
+                learn when you apply CSS,
+                and you can't really learn CSS without knowing HTML.</p>
+        </section>
+        <section id="Css_ruleset" class="main-section">
+            <header>CSS ruleset</header>
+            <p class="info">Dissecting the CSS code for red paragraph text to understand how it works:</p>
+
+            <img src="https://mdn.mozillademos.org/files/9461/css-declaration-small.png"
+                alt="an illustraion of a css ruleset">
+            <p class="caption">The whole structure is called a ruleset, the names of the individual part are:</p>
+            <p class="info"></p>
+            <h3>Selectors</h3>
+            <p class="dd">This is the HTML element name at the start of the ruleset. It defines the element(s) 
+                to be styled (in this example, <code>p</code> elements). To style a different element, change the selector.</p>
+                <h3>Declaration</h3>
+                <p class="dd">This is a single rule like <code>color: red;.</code> It specifies which of the element's properties you want to style.</p>
+                <h3>properties</h3>   
+                <p class="dd">These are ways in which you can style an HTML element. (In this example, <code>color</code> is a property of the <code>p</code> elements.) 
+                    In CSS, you choose which properties you want to affect in the rule.</p>
+                <h3>property value</h3>
+                <p class="dd">To the right of the property—after the colon—there is the <strong>property value.</strong> This chooses one out of many possible appearances for a given property. (For example, there are many <code>color</code> values in addition to <code>red.</code></p>
+                <p class="info">Other important parts are:</p>
+                <ul class="ul">
+                    <li>Apart from the dicussed part, each ruleset must be wrapped in curly braces. (<code>{}</code>)</li>
+                    <li>Within each declaration, a colon must be used (<code>:</code>) to separate the property from it's value or values.</li>
+                    <li>Within each ruleset, a semicolon must be used (<code>;</code>) to separate each declaration from the next one.</li>
+                </ul>
+                <p class="info">multiple property value can be used in one ruleset, by separating them with a semicolons like this</p>
+                <div class="container">
+                    <p class="info">p   {
+                        color: red; <br>
+                        width: 500px; <br>
+                        border: 1px solid black; <br>
+                      }</p>
+                </div>
+        </section>
+        <section id="Selecting_multiple_element" class="main-section">
+            <header>Selecting multiple element</header>
+            <p class="info">It is possible to select multiple elements and apply one ruleset to all of them. Separate multiple selectors by commas. For example:</p>
+            <div class="container">
+                <p class="item">p, li, h1 { <br>
+                    color: red;<br>
+                  }</p>
+            </div>
+        </section>
+        <section id="Selectors" class="main-section">
+            <header>selectors</header>
+            <p class="info">CSS selectors are used to "find" (or select) the HTML elements you want to style.</p>
+        </section>
+        <section id="Types_of_selectors" class="main-section">
+            <header>Types of selectors</header>
+            <p class="info">There are many different types of selectors. The examples above use element selectors, 
+                which select all elements of a given type. But we can make more specific selections as well. Here 
+                are some of the more common types of selectors:</p>
+            <h3>Element selector</h3>
+            <p class="dd">It is sometimes called a tag or type selector, It selects all HTML elements of the specified type. For example: <code>p</code> selects <code>p tag</code></p>
+            <h3>ID selectors</h3>
+            <p class="dd">The element on the page with the specified ID. On a given HTML page, each id value should be unique. For example: <code>#my-id</code> 
+               <code>selects p id="my-id"></code> or <code>a id="my-id"></code></p>
+            <h3>Class selectors</h3>
+            <p class="dd">The element(s) on the page with the specified class. Multiple instances of the same class can appear on a page. For example: <code>.my-class</code> 
+              selects   <code>p class="my-class"></code>.</p>
+              <h3>Attribute selectors</h3>
+              <p class="dd">The element(s) on the page with the specified attribute. For example: <code>img[src]</code>
+                selects <code>img src=</code> <code>"myimage.png"></code> but not <code>img></code> </p>
+                <h3>Pseudo-class selectors</h3>
+                <p class="dd">The specified element(s), but only when in the specified state. (For example, when a cursor hovers over a link.) For example:<code>a:hover</code>
+                    selects <code>a tag</code> , but only when the mouse pointer is hovering over the link.</p>
+                    <p class="info">There are many selectors that are not dicussed here.</p>
+        </section>
+        <section id="Fonts_and_texts" class="main-section">
+            <header>fonts and texts</header>
+            <p class="info">Now that we've explored some CSS fundamentals, we can use the font property to improve the styling of an HTML page. Here is an example:</p>
+            <div class="container">
+                <p class="item">html { <br>
+                    font-size: 10px; /* px means "pixels": the base font size is now 10 pixels high  */ <br>
+                    font-family: "Open Sans", sans-serif; /* this should be the rest of the output you got from Google fonts */ <br>
+                  }</p>
+                </div>
+                <p class="dd">Note: Anything between the <code>/**/</code> is a CSS comment </p>
+                <p class="info">Analysizing the property above: <br> <code>font-family</code> it is used to specify a font(s) to use for a text in an element(s).
+                    <br><code>font-size</code> to set a particular size for a text.
+                   <br> This rule defines a global base font and font size for the whole page. Since the <code>html tag</code> is the parent element of the 
+                    whole page, all elements inside it inherit the same font-size and font-family.</p>
+        </section>
+        <section id="Css_box_modal" class="main-section">
+            <header>CSS box modal</header>
+            <p class="info">Something you'll notice about writing CSS: a lot of it is about boxes. This includes setting size, color, and position. Most HTML 
+                elements on your page can be thought of as boxes sitting on top of other boxes.</p>
+                <img src="https://mdn.mozillademos.org/files/9441/boxes.jpg" alt="a image description of box">
+                <p class="info">CSS layout is mostly based on the box model. Each box taking up space on your page has properties like:</p>
+                <ul class="ul">
+                    <li><code>padding,</code> the space around the content. In the example below, it is the space around the paragraph text.</li>
+                    <li><code>border,</code> the solid line that is just outside the padding.</li>
+                    <li><code>margin,</code> the space around the outside of the border.</li>
+                    <img src="https://mdn.mozillademos.org/files/9443/box-model.png" alt="a image explaining padding, border and margin">
+                </ul>
+                <p class="info">We can also use:</p>
+                <ul class="ul">
+                    <li><code>width()</code> of an element</li>
+                    <li><code>backgroung-color,</code> the color behind an element's content and padding.</li>
+                    <li><code>color,</code> the color of an element's content (usually text).</li>
+                    <li><code>text-shadow,</code> sets a drop shadow on the text inside an element.</li>
+                    <li><code>display,</code> sets the display mode of an element. (keep reading to learn more).</li>
+                </ul>
+        </section>
+        <section id="Changing_the_page_color" class="main-section">
+            <header>changing the page color</header>
+            <p class="info">This rule sets a background color for the entire page. Change the color code to the color you want.</p>
+            <div class="container">
+                <p class="item">html { <br>
+                    background-color: #00539F;<br>
+                  }</p>
+            </div>
+        </section>
+        <section id="Styling_the_body" class="main-section">
+            <header>styling the body</header>
+            <p class="info">A body can be styled by usibg various CSS proerty tag here is an example:</p>
+            <div class="container">
+                <p class="item">body { <br>
+                    width: 600px; <br>
+                    margin: 0 auto; <br>
+                    background-color: #FF9500; <br>
+                    padding: 0 20px 20px 20px; <br>
+                    border: 5px solid black; <br>
+                  }</p>
+            </div>
+            <p class="info">Let's Analysize the code above:</p>
+            <ul class="ul">
+                <li><code>width: 600px;</code> This forces the body to always be 600 pixels wide.</li>
+                <li><code>margin: 0 auto;</code>When you set two values on a property like <code>margin</code> or <code>padding,</code>
+                     the first value affects the element's top and bottom side (setting it to <code>0</code> in this case); the second value affects 
+                     the left and right side. (Here, <code>auto</code> is a special value that divides the available horizontal space evenly between left and right). </li>
+                <li><code>background-color: #FF9500;</code> This sets the element's background color. This project uses a reddish orange for the body background color, 
+                    as opposed to dark blue for the <code>html</code> element.</li>
+                <li><code>padding: 0 20px 20px 20px;</code>This sets four values for padding. The goal is to put  some space around the content. In this example, there 
+                    is no padding on the top of the body, and 20 pixels on the right, bottom and left. The values set top, right, bottom, left, in that order. </li>
+                <li><code>border: 5px solid black;</code>This sets values for the width, style and color of the border. In this case, it's a five-pixel–wide, solid black 
+                    border, on all sides of the body.</li>
+            </ul>
+        </section>
+        <section id="Positioning" class="main-section">
+            <header>Positioning</header>
+            <p class="info">Positioning allows you to take elements out of the normal document layout flow, and make them behave differently, for example sitting on top of one another, or always remaining in the same place inside the browser viewport.</p>
+        </section>
+        <section id="CSS_flexbox" class="main-section">
+            <header>CSS Flexbox</header>
+            <p class="info">Flexbox is a one-dimensional layout method for laying out items in rows or columns. Items flex to fill additional space and shrink to fit into smaller spaces.</p>
+        </section>
+        <section id="CSS_grid" class="main-section">
+            <header>CSS Grid</header>
+            <p class="info">CSS Grid Layout is a two-dimensional layout system for the web. It lets you lay content out in rows and columns, and has many features that make building complex layouts straightforward.</p>
+        </section>
+        <section id="Reference" class="main-section">
+            <header>reference</header>
+            <p class="info">All the documaentation in this page is taken from <a href="" alt="link to mdn">MDN</a></p>
+        </section>
+
+    </main>
+</body>
+
+</html>

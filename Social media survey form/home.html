@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey form</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="survey.js" type="Javascript">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1 id="title">Social media Survey form</h1>
+        <p id="description">Thank you for taking your time to help us make the platform better</p>
+    </header>
+    <center>
+        <form id="survey-form">
+            <div class="form-group">
+
+
+                <label class="name-label" for="name"></label>
+                <p>Name</p></label>
+                <input type="text" name="Name" class="form-control" id="Name" placeholder="Enter your name" required>
+            </div>
+            <div class="form-group">
+                <label id="email-label" for="email">
+                    <p>Email</p>
+                    <input type="text" name="email" class="form-control" id="email" placeholder="Enter your email"
+                        required>
+                </label>
+            </div>
+            <div class="form-group">
+                <p>Which option describe you well?</p>
+                <select name="rule" class="form-control" id="dropdown" required>
+                    <option disabed selected value>select current role</option>
+                    <option value="student">Student</option>
+                    <option value="empolyed">Employed</option>
+                    <option value="unemployed">Unemployed</option>
+                    <option value="prefer not to say">Prefer not to say</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="Age">
+                    <p> Age </p>
+                    <input type="text" name="age" class="form-control" id="age" placeholder="Age" min="2" max="5"
+                        required>
+                </label>
+            </div>
+            <div class="form-group">
+                <label for="number">
+                    <p> Phone Number</p>
+                    <input type="text" name="number" class="form-control" id="number-label" placeholder="Phone number"
+                        min="10" max="15">
+                </label>
+            </div>
+
+            <div class="form-group">
+                <label for="most">
+                    <p> Which social media do you use the most?</p>
+                    <input type="text" name="most" class="form-control" min="0" max="15" required>
+                </label> <br>
+                <br>
+                <label for="why">
+                    <p class="padding-top"> Why?</p>
+                    <input type="text" name="why" class="form-control" placeholder="why">
+                </label>
+            </div>
+
+            <div class="form-group">
+                <label for="less">
+                    <p> Which social media do you use the less?</p>
+                    <input type="text" name="less" class="form-control" min="0" max="15" required>
+                </label> <br>
+                <br>
+                <label for="why">
+                    <p class="padding-top"> Why? </p>
+                    <input type="text" class="form-control why" placeholder="why">
+                </label>
+            </div>
+            <div class="form-group">
+                <p>Would you recommend it to a friend?</p>
+                <label for="definitely">
+                    <input type="radio" class="input-radio" name="recommend" required>Definitely
+                </label> <br>
+                <label for="Not sure">
+                    <input type="radio" class="input-radio" name="recommend" required>Maybe
+                </label> <br>
+                <label for="No">
+                    <input type="radio" class="input-radio" name="recommend" required>No
+                </label>
+            </div>
+
+            <div class="form-group">
+                <p>Why do use social media general? (click the box to select)</p>
+                <label for="improvement">
+                    <input name="improve" class="checkbox" value="To-stay-in-touch-with-family/friends"
+                        type="checkbox">To stay in touch with family/friends
+                </label> <br>
+                <label for="improvement">
+                    <input name="improve" type="checkbox" class="checkbox" value="For-gaming/entertainment">For
+                    gaming/enterainment
+                </label>
+                <label for="improvement"> <br>
+                    <input name="improve" type="checkbox" class="checkbox" value="for-business/work-purpose">for
+                    business/work purposes
+                </label>
+                <label for="improvement"><br>
+                    <input name="improve" type="checkbox" class="checkbox"
+                        value="for-recommendation-about-new-programs/products">For recommendation about new
+                    programs/products
+                </label>
+            </div>
+            <div class="form-group">
+                <p>Do you have any comment or suggestion be sure to put it down here!</p>
+                <textarea name="comment" class="comment" id="comments" placeholder="Enter your comment here" cols="50"
+                    rows="10"></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit" id="submit" class="submit-button">SUBMIT</button>
+
+            </div>
+        </form>
+    </center>
+</body>
+
+</html>

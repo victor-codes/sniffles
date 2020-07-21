@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    background-color: #e5e5e5;
+    line-height: 1.5em;
+
+    
+}
+#navbar {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    width: 100%;
+    padding-bottom: 0px;
+    background: white;
+    border-right: 0.1px solid;
+    border-color: rgba(0, 0, 0, 0.5); 
+} 
+
+#navbar header {
+    font-weight: 700;
+    font-size: 1.3em;
+    text-align: center !important;
+    padding: 20px;
+    margin-bottom: 0px;
+    border-bottom: 0.8px solid;
+    border-color: rgba(0, 0, 0, 0.5);
+}
+#navbar li {
+    list-style-type: none;
+    padding-top: 10px;
+    padding-right: 30px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    margin-left: -40px;
+    margin-bottom: 0px;
+    border-bottom: 0.5px solid;
+    border-color: rgba(0, 0, 0, 0.5);
+
+
+}
+#navbar a {
+    text-decoration: none;
+    color: inherit;
+
+}
+#navbar ul {
+    font-size: 16px;
+    margin-top: 0px;
+    height: 250px;
+    margin-bottom: 0px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+@media only screen and (min-width: 769px) {
+     #navbar ul {
+         height: 88%;
+    }
+    #navbar li {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 30px;
+    }
+ 
+}
+#navbar ul li::first-letter {
+    text-transform: capitalize;
+}
+@media screen and (min-width: 769px) {
+    #navbar {
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        bottom: 0px;
+        width: 22%;
+        height: 100%;
+        padding-bottom: 0px;
+        background: white;
+        border-right: 0.5px solid;
+    }
+    img {
+        width: 300px;
+        height: 200px;
+        margin: 0 350px;
+    }
+}
+#main-doc {
+    margin-top: 320px;
+    background: none;
+}
+img {
+    width: 100%;
+    margin: auto;
+}
+
+header {
+    font-size: 1.3em;
+    font-weight: 700;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+header::first-letter {
+    text-transform: capitalize;
+}
+.info {
+    padding: 0 30px;
+    text-align: justify;
+}
+h3 {
+    padding: 0 30px;
+}
+h3::first-letter {
+    text-transform: capitalize;
+}
+.container {
+    width: 250px;
+    height: 50px;
+    background-color: #f7f7f7;
+    border-radius: 5px;
+    margin: 0 50px;
+    overflow-y: auto;
+    overflow-x: hidden;
+
+}
+.item {
+    padding: 0 10px;
+}
+
+@media screen and (min-width: 769px) {
+    #main-doc {
+        position: absolute;
+        margin-top: 0px;
+        margin-left: 290px;
+        padding-left: 20px;
+    }
+    .container {
+        width: 600px;
+        height: 100px;
+        background-color: #f7f7f7;
+        border-radius: 5px;
+        margin-left: 200px;
+        padding-left: 40px;
+        overflow-y: auto;
+        overflow-x: hidden;    
+    }
+    img {
+        width: 500px;
+        height: 250px;
+        margin-left: 250px;
+    }
+
+}
+code {
+    background-color: rgba(165, 165, 165, 0.294);
+    font-size: 16px;
+    padding: 0 5px;
+    border-radius: 3px;
+}
+.dd {
+    padding: 0 50px;
+    text-align: justify;
+}
+ .ul {
+    padding: 0 70px;
+    text-align: justify;
+}
+#Reference {
+    margin-bottom: 100px;
+}
