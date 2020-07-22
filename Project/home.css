@@ -1,23 +1,31 @@
 /* add top nav start */
 .topnav {
-   background-color: #b2beb5;
+   background-color: whitesmoke;
    overflow: hidden;
   
 }
-.topnav active {
+.topnav a.active {
+  background-color: #4CAF50;
   color: blueviolet;
   
 
 
 }
 .topnav a {
-    float: left;
+    float: right;
     color: black;
     text-align: center;
     padding: 10px 10px;
     text-decoration: none;
     font-size: 17px;
 }
+/*shows the active bar*/
+
+.topnav a.active {
+  background-color: #000000;
+  color: white;
+}
+
 .topnav a:hover {
     background-color: #fff;
     color: black;
@@ -25,7 +33,8 @@
 /* top nav end */
 /* front page image start*/
  header {
-   background-image: url(unsplash.jpg);
+   background-image: url(none);
+   background-color: whitesmoke;
    height: 100vh;
    background-size: cover;
    background-position: center;
@@ -38,39 +47,58 @@
    top: 50%;
    left: 50%;
    transform: translate(-50%, -50%) ;
+   padding: 0px;
  }
  .title h1{
-   color:#fff;
+   color: black;
    font-size: 50px;
 
  }
+.title h2{
+  font-size: 500px;
+  font-size: large;
+  font-weight: 50px;
+  transform: translate(35%, -50%) ;
+}
 
 .button {
+  font-weight: 100px;
   position: absolute;
-  top: 65%;
-  left: 50%;
+  top: 62%;
+  left: 47%;
   transform: translate(-50%, -50%);
 }
 .btn {
-  border: 1px solid #fff transparent;
+  border: 1px solid  black transparent;
   padding: 10px 30 px;
   color: #fff;
   text-decoration: none;
+  
+  /* Rectangle 8 */
+
+position: absolute;
+width: 110px;
+height: 20px;
+
+background: transparent;
+border-radius: 50px;
+color: #000;
 }
+ 
 
-.btn:hover {
-  background-color: #fff;
-  color: #000;
+.p {
+  text-decoration-color: tomato;
 }
-
-
 
 .circle {
-  float: center;
-  width: 150px;
-  height: 150px;
-  background-color: #eeeeee;
-  border-radius: 50%;
+
+  background-position: center;
+  visibility: visible;
+  width: 130px;
+  height: 130px;
+  background-color: #C44;
+  border-radius: 10%;
   box-shadow: 5px 5px 10px #00000027,
               -5px -5px 10px #fff;
+  transform: translate(90%, -300%);
 }
