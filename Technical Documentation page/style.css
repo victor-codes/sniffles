@@ -74,7 +74,7 @@ body{
         top: 0px;
         left: 0px;
         bottom: 0px;
-        width: 22%;
+        width: 25%;
         height: 100%;
         padding-bottom: 0px;
         background: white;
@@ -83,12 +83,10 @@ body{
     img {
         width: 300px;
         height: 200px;
-        margin: 0 350px;
     }
 }
 #main-doc {
     margin-top: 320px;
-    background: none;
 }
 img {
     width: 100%;
@@ -106,7 +104,7 @@ header::first-letter {
 }
 .info {
     padding: 0 30px;
-    text-align: justify;
+    /* text-align: justify; */
 }
 h3 {
     padding: 0 30px;
@@ -130,25 +128,32 @@ h3::first-letter {
 
 @media screen and (min-width: 769px) {
     #main-doc {
-        position: absolute;
+        position: relative;
         margin-top: 0px;
-        margin-left: 290px;
+        float: right;
+        width: 73.8%;
         padding-left: 20px;
+        margin: 0px;
+        padding-right: 0px;
     }
     .container {
+        display: flex;
+        align-items: center;
         width: 600px;
         height: 100px;
         background-color: #f7f7f7;
         border-radius: 5px;
-        margin-left: 200px;
+        /* margin-left: 200px; */
         padding-left: 40px;
         overflow-y: auto;
         overflow-x: hidden;    
     }
     img {
+        display: flex;
+        align-content: center;
         width: 500px;
         height: 250px;
-        margin-left: 250px;
+        margin: auto;
     }
 
 }
@@ -160,11 +165,11 @@ code {
 }
 .dd {
     padding: 0 50px;
-    text-align: justify;
+    /* text-align: justify; */
 }
  .ul {
     padding: 0 70px;
-    text-align: justify;
+    /* text-align: justify; */
 }
 #Reference {
     margin-bottom: 100px;
