@@ -1,0 +1,40 @@
+//html
+
+<div id="scroll-progress">
+    <div id="scroll">
+
+    </div>
+</div>
+
+
+//style
+
+#scroll-progress {
+    position: fixed ;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 8px;
+    background-color:  rgba(233, 142, 82, 0.1);
+    z-index: 80;
+}
+#scroll {
+    background-color: #E98E52;
+    height: inherit;
+}
+
+
+//js
+
+
+let scrollProgress = document.getElementById('scroll')
+function scrolline() {
+    const screenWidth = window.innerHeight
+    const totalHeight = document.body.clientHeight
+    const scrolled = window.scrollY
+    const scrollWidth = Math.floor(((scrolled / (totalHeight-screenWidth)) * 100))
+    console.log(scrollWidth)
+    scrollProgress.style.width = `${scrollWidth}%`
+}
+window.addEventListener('scroll', scrolline)
